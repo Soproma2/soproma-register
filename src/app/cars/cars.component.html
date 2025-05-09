@@ -1,0 +1,14 @@
+<div class="cars-container">
+  <h2>ხელმისაწვდომი მანქანები</h2>
+  
+  <div class="cars-grid">
+    <div class="car-card" *ngFor="let car of cars">
+      <div class="car-info">
+        <h3>{{car.brand}} {{car.model}}</h3>
+        <p class="year">წელი: {{car.year}}</p>
+        <p class="price">ფასი: ₾{{car.price}}</p>
+        <p class="description">{{car.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>
